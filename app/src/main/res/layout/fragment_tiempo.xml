@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TiempoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView70"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="SERVICIO DE DELIVERY"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/textView71"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Califica tu servicio de delivery:" />
+
+        <RatingBar
+            android:id="@+id/DelRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:numStars="5" />
+
+        <TextView
+            android:id="@+id/textView72"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalle del servicio:" />
+
+        <EditText
+            android:id="@+id/delFinalEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/textView73"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:text="NUESTRO SERVICIO"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView74"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Califica tu pedido:" />
+
+        <RatingBar
+            android:id="@+id/PedRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:numStars="5" />
+
+        <TextView
+            android:id="@+id/textView75"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalle del pedido:" />
+
+        <EditText
+            android:id="@+id/pedFinalEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/enviarCalificacionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Enviar calificación"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

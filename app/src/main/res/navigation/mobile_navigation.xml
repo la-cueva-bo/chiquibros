@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.chiquibroaster.ui.home.HomeFragment"
+        android:label="PRINCIPAL"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/nextAction"
+            app:destination="@id/pedidoFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_perfil"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_carrito"
+            app:destination="@id/carritoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.chiquibroaster.ui.perfil.PerfilFragment"
+        android:label="MI PERFIL"
+        tools:layout="@layout/fragment_gallery">
+        <action
+            android:id="@+id/actionPedHist"
+            app:destination="@id/pedidosHistFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/carritoFragment"
+        android:name="com.chiquibroaster.ui.carrito.CarritoFragment"
+        android:label="MI CARRITO"
+        tools:layout="@layout/fragment_slideshow">
+        <action
+            android:id="@+id/action_carritoFragment_to_seguimientoFragment"
+            app:destination="@id/seguimientoFragment" />
+        <action
+            android:id="@+id/actionFinal"
+            app:destination="@id/tiempoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pedidoFragment"
+        android:name="com.chiquibroaster.PedidoFragment"
+        android:label="REALIZA TU PEDIDO"
+        tools:layout="@layout/fragment_pedido">
+        <action
+            android:id="@+id/actionFactura"
+            app:destination="@id/facturaFragment" />
+        <action
+            android:id="@+id/action2l"
+            app:destination="@id/refrescos2lFragment" />
+        <action
+            android:id="@+id/action500ml"
+            app:destination="@id/refrescos500mlFragment" />
+        <action
+            android:id="@+id/action_pedidoFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+        <argument
+            android:name="titulo"
+            android:defaultValue="asdsad"
+            app:argType="string" />
+        <argument
+            android:name="arroz"
+            android:defaultValue="ASAs"
+            app:argType="string" />
+        <argument
+            android:name="papas"
+            android:defaultValue="asdasdsa"
+            app:argType="string" />
+        <argument
+            android:name="platano"
+            android:defaultValue="fsdfsdf"
+            app:argType="string" />
+        <argument
+            android:name="imagenstandard"
+            android:defaultValue="asdasd"
+            app:argType="string" />
+        <argument
+            android:name="imaArr"
+            android:defaultValue="asdasdsad"
+            app:argType="string" />
+        <argument
+            android:name="imaPa"
+            android:defaultValue="asdasdsa"
+            app:argType="string" />
+        <argument
+            android:name="imaPl"
+            android:defaultValue="asdasd"
+            app:argType="string" />
+        <argument
+            android:name="impre"
+            android:defaultValue="asdasd"
+            app:argType="string" />
+        <argument
+            android:name="precio"
+            android:defaultValue="asdsa"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/facturaFragment"
+        android:name="com.chiquibroaster.FacturaFragment"
+        android:label="CONFIRMACIÓN"
+        tools:layout="@layout/fragment_factura">
+        <action
+            android:id="@+id/ubiAccion"
+            app:destination="@id/mapsFragment" />
+        <argument
+            android:name="titulo"
+            android:defaultValue="asdas"
+            app:argType="string" />
+        <argument
+            android:name="cont7"
+            android:defaultValue="asdsa"
+            app:argType="string" />
+        <argument
+            android:name="cont6"
+            android:defaultValue="asdas"
+            app:argType="string" />
+        <argument
+            android:name="cont5"
+            android:defaultValue="asdasd"
+            app:argType="string" />
+        <argument
+            android:name="canplatano"
+            android:defaultValue="asdas"
+            app:argType="string" />
+        <argument
+            android:name="canpapas"
+            android:defaultValue="asdasdas"
+            app:argType="string" />
+        <argument
+            android:name="canarroz"
+            android:defaultValue="asdasdas"
+            app:argType="string" />
+        <argument
+            android:name="canpierna"
+            android:defaultValue="asdasd"
+            app:argType="string" />
+        <argument
+            android:name="canpecho"
+            android:defaultValue="asdasdas"
+            app:argType="string" />
+        <argument
+            android:name="cont11"
+            android:defaultValue="asdasd"
+            app:argType="string" />
+        <argument
+            android:name="cont10"
+            android:defaultValue="asdasdsa"
+            app:argType="string" />
+        <argument
+            android:name="cont9"
+            android:defaultValue="asdasd"
+            app:argType="string" />
+        <argument
+            android:name="cont8"
+            android:defaultValue="asdasd"
+            app:argType="string" />
+        <argument
+            android:name="userId"
+            android:defaultValue="asdas"
+            app:argType="string" />
+        <argument
+            android:name="userName"
+            android:defaultValue="asdasd"
+            app:argType="string" />
+        <argument
+            android:name="userEmail"
+            android:defaultValue="asdasdsa"
+            app:argType="string" />
+        <argument
+            android:name="cont12"
+            android:defaultValue="asdas"
+            app:argType="string" />
+        <argument
+            android:name="cont13"
+            android:defaultValue="asdsadsa"
+            app:argType="string" />
+        <argument
+            android:name="cont14"
+            android:defaultValue="asdasda"
+            app:argType="string" />
+        <argument
+            android:name="cont15"
+            android:defaultValue="asdasda"
+            app:argType="string" />
+        <argument
+            android:name="cont16"
+            android:defaultValue="asdasd"
+            app:argType="string" />
+        <argument
+            android:name="cont17"
+            android:defaultValue="asdasda"
+            app:argType="string" />
+        <argument
+            android:name="cont18"
+            android:defaultValue="asdsadas"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.chiquibroaster.MapsFragment"
+        android:label="UBICACIÓN"
+        tools:layout="@layout/fragment_maps">
+        <action
+            android:id="@+id/backAccion"
+            app:popUpTo="@id/facturaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/refrescos500mlFragment"
+        android:name="com.chiquibroaster.Refrescos500mlFragment"
+        android:label="REFRESCOS 500ml"
+        tools:layout="@layout/fragment_refrescos500ml">
+        <action
+            android:id="@+id/action_fragment_refrescos500ml2_to_pedidoFragment"
+            app:destination="@id/pedidoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/refrescos2lFragment"
+        android:name="com.chiquibroaster.Refrescos2lFragment"
+        android:label="REFRESCOS 2L"
+        tools:layout="@layout/fragment_refrescos2l">
+        <action
+            android:id="@+id/action_fragment_refrescos2l_to_pedidoFragment"
+            app:destination="@id/pedidoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pedidosHistFragment"
+        android:name="com.chiquibroaster.PedidosHistFragment"
+        android:label="MIS PEDIDOS"
+        tools:layout="@layout/fragment_pedidos_hist" />
+    <fragment
+        android:id="@+id/seguimientoFragment"
+        android:name="com.chiquibroaster.SeguimientoFragment"
+        android:label="SEGUIMIENTO"
+        tools:layout="@layout/fragment_seguimiento">
+        <argument
+            android:name="latdel"
+            android:defaultValue="asdasd"
+            app:argType="string" />
+        <argument
+            android:name="londel"
+            android:defaultValue="asdasd"
+            app:argType="string" />
+        <argument
+            android:name="prod"
+            android:defaultValue="asdasdsa"
+            app:argType="string" />
+        <argument
+            android:name="total"
+            android:defaultValue="asdasd"
+            app:argType="string" />
+        <argument
+            android:name="estado"
+            android:defaultValue="asdasdas"
+            app:argType="string" />
+        <argument
+            android:name="hora"
+            android:defaultValue="asdasdasdsa"
+            app:argType="string" />
+        <argument
+            android:name="iddel"
+            android:defaultValue="asdasdas"
+            app:argType="string" />
+        <argument
+            android:name="idped"
+            android:defaultValue="asdasdsa"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/tiempoFragment"
+        android:name="com.chiquibroaster.TiempoFragment"
+        android:label="CALIFICACIÓN"
+        tools:layout="@layout/fragment_tiempo">
+        <argument
+            android:name="idped"
+            android:defaultValue="asdsad"
+            app:argType="string" />
+        <argument
+            android:name="delid"
+            app:argType="string"
+            android:defaultValue="asdsadsa" />
+    </fragment>
+</navigation>

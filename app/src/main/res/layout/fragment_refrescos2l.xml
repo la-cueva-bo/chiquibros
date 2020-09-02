@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Refrescos2lFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewCoca2l"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@mipmap/cocacola" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Coca-Cola"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/coca1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_add_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textcoca"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="18sp" />
+
+                        <ImageButton
+                            android:id="@+id/coca2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_remove_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewCocaz2l"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@mipmap/cocaz2l" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Coca-Cola Zero"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/cocaz1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_add_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textcocaz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="18sp" />
+
+                        <ImageButton
+                            android:id="@+id/cocaz2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_remove_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewSprite2l"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@mipmap/sprite2l" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Sprite"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/sprite1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_add_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textsprite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="18sp" />
+
+                        <ImageButton
+                            android:id="@+id/sprite2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_remove_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewFantan2l"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@mipmap/fantan2l" />
+
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Fanta Naranja"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/fantan1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_add_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textfantan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="18sp" />
+
+                        <ImageButton
+                            android:id="@+id/fantan2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_remove_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewFantam2l"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@mipmap/fantam2l" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Fanta Mandarina"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/fantam1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_add_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textfantam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="18sp" />
+
+                        <ImageButton
+                            android:id="@+id/fantam2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_remove_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewFantapa2l"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@mipmap/fantapa2l" />
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Fanta Papaya"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/fantapa1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_add_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textfantapa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="18sp" />
+
+                        <ImageButton
+                            android:id="@+id/fantapa2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_remove_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewFantapi2l"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@mipmap/fantapi2l" />
+
+                    <TextView
+                        android:id="@+id/textView47"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Fanta Piña"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/fantapi1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_add_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textfantapi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="18sp" />
+
+                        <ImageButton
+                            android:id="@+id/fantapi2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_remove_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewFantag2l"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@mipmap/fantag2l" />
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Fanta Guarana"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/fantag1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_add_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textfantag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="18sp" />
+
+                        <ImageButton
+                            android:id="@+id/fantag2"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_remove_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewMine2l"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@mipmap/mineragua2l" />
+
+                    <TextView
+                        android:id="@+id/textView58"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Mineragua"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/mine1"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_add_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textmine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="18sp" />
+
+                        <ImageButton
+                            android:id="@+id/mine2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@color/cardview_light_background"
+                            app:srcCompat="@drawable/ic_remove_circle_black_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/confirefresco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorPrimary"
+                android:text="  Confirmar  "
+                android:textColor="@color/cardview_light_background"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

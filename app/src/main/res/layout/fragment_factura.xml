@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FacturaFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView52"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:text="  Detalle de su pedido:"
+                        android:textColor="?android:attr/colorBackground"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="15dp"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/logosf" />
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/TituloFactura"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1sp"
+                                    android:layout_weight="1"
+                                    android:text="Cuarto de Pollo"
+                                    android:textColor="@color/design_default_color_on_secondary"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/facturapresa1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="1sp"
+                                    android:layout_weight="1"
+                                    android:text="Presa: Pecho/Ala (2)"
+                                    android:textColor="@color/design_default_color_on_secondary"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/facturapresa2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Presa: Pierna/Entrepierna (3)"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textSize="14sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/facturaextras"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="1sp"
+                                        android:text="Extras:"
+                                        android:textColor="@color/design_default_color_on_secondary"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView16"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="TextView"
+                                        android:textColor="@android:color/background_dark"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView17"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="TextView"
+                                        android:textColor="@android:color/background_dark"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView19"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="TextView"
+                                        android:textColor="@android:color/background_dark"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/facturarefrescos"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="1sp"
+                                        android:text="Refrescos:"
+                                        android:textColor="@color/design_default_color_on_secondary"
+                                        android:textSize="14sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/ref1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="ref"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="14sp" />
+
+                                        <TextView
+                                            android:id="@+id/ref2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="ref"
+                                            android:textColor="@android:color/black" />
+
+                                        <TextView
+                                            android:id="@+id/ref3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="ref"
+                                            android:textColor="@android:color/black" />
+
+                                        <TextView
+                                            android:id="@+id/ref4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="ref"
+                                            android:textColor="@android:color/black" />
+
+                                        <TextView
+                                            android:id="@+id/ref5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="ref"
+                                            android:textColor="@android:color/black" />
+
+                                        <TextView
+                                            android:id="@+id/ref6"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="ref"
+                                            android:textColor="@android:color/black" />
+
+                                        <TextView
+                                            android:id="@+id/ref7"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="ref"
+                                            android:textColor="@android:color/black" />
+
+                                        <TextView
+                                            android:id="@+id/ref8"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="ref"
+                                            android:textColor="@android:color/black" />
+
+                                        <TextView
+                                            android:id="@+id/ref9"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="ref"
+                                            android:textColor="@android:color/black" />
+
+                                        <TextView
+                                            android:id="@+id/ref10"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="ref"
+                                            android:textColor="@android:color/black" />
+
+                                        <TextView
+                                            android:id="@+id/ref11"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="ref"
+                                            android:textColor="@android:color/black" />
+
+                                        <TextView
+                                            android:id="@+id/ref12"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="ref"
+                                            android:textColor="@android:color/black" />
+
+                                        <TextView
+                                            android:id="@+id/ref13"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="ref"
+                                            android:textColor="@android:color/black" />
+
+                                        <TextView
+                                            android:id="@+id/ref14"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="ref"
+                                            android:textColor="@android:color/black" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </ScrollView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView53"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Datos de Facturación:"
+                        android:textColor="@color/design_default_color_on_secondary"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView54"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Nombre o Razón social:" />
+
+                    <EditText
+                        android:id="@+id/nombFacEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="nombre"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView55"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" C.I./NIT" />
+
+                            <EditText
+                                android:id="@+id/nitFacEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="nit/carnet"
+                                android:inputType="textPersonName"
+                                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView56"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Telefono:" />
+
+                            <EditText
+                                android:id="@+id/phoneFacEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="7"
+                                android:hint="telefono (obligatorio)"
+                                android:inputType="phone"
+                                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView57"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ubicación:"
+                        android:textColor="@color/design_default_color_on_secondary"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/locFacEditText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="dirección (obligatorio)"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                        <ImageButton
+                            android:id="@+id/locButton"
+                            style="@android:style/Widget.ImageButton"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                            android:src="@drawable/ic_location" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView60"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Pedido:  "
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bs. "
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/texttotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="50.00"
+                        android:textColor="@color/design_default_color_on_secondary"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/confirmarButton"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:background="#F30101"
+                android:text="Confirmar Pedido"
+                android:textColor="@color/design_default_color_background"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

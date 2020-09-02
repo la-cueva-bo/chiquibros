@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "847279995451",
+    "firebase_url": "https://chiqui-broaster-2020.firebaseio.com",
+    "project_id": "chiqui-broaster-2020",
+    "storage_bucket": "chiqui-broaster-2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847279995451:android:a6db096d7dc36bd20d7a1e",
+        "android_client_info": {
+          "package_name": "com.chiquibroaster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847279995451-ovgeqm72a3vvhpv5atg6obdq7cotqdae.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chiquibroaster",
+            "certificate_hash": "0cab6ba6e41dfffe81c649992c3b6241ef54835a"
+          }
+        },
+        {
+          "client_id": "847279995451-rv1empu0qpbmtp419hra5rkam9rh149r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM26OZD6nIDmftwE8JmUmFRaig8CCWs7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847279995451-rv1empu0qpbmtp419hra5rkam9rh149r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
